@@ -30,7 +30,7 @@
 
                 var tablestart="<table id=myTable border=1>";
                 var tableend = "</table>";
-                var trstart = "<tr bgcolor=#ff9966>";
+                var trstart = "<tr bgcolor=#B2E7C3>";
                 var trend = "</tr>";
                 var tdstart = "<td>";
                 var tdend = "</td>";
@@ -41,7 +41,8 @@
                 for (var r=0;r<row;r++) {
                     document.write(trstart);
                     for(var c=0; c<col; c++) {
-                        document.write(tdstart+"Row."+r+" Col."+c+tdend);
+                  
+                     document.write(tdstart+(r+1)*(c+1)+tdend);
                     }
                 }
 
