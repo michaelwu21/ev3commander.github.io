@@ -3,11 +3,12 @@
 <head>
       <meta charset="utf-8">
 <title>JS Test</title>
+
 </head>
     <body>
 <div style='float: right;'><a href="sitemap.html">Sitemap</a><Br> <a href="index.html">Back to home</a></div>
         <p id="p1">
-            <b>Enter the no of row and column to create table:</b>
+            <b>Enter the no of row and column to create multiplication table:</b>
             <br/><br/>
             <table>
                 <tr>
@@ -15,8 +16,8 @@
                     <th>No. of Column(s)</th>
                 </tr>
                 <tr>
-                    <td><input type="text" id="row" value="4" /> X</td>
-                    <td><input type="text" id="col" value="7" />Y</td>
+                    <td><input type="text" id="row" value="10" /> X</td>
+                    <td><input type="text" id="col" value="10" />Y</td>
                 </tr>
             </table>
             <br/>
@@ -49,18 +50,10 @@
 
                 document.write(tableend);
                 document.write("<br/>");
-                var s="<button id="+"delete"+" onclick="+"deleteTable()"+">Delete top Row </button>";
-                document.write(s);
                 var relod="<button id="+"relod"+" onclick="+"reloadPage()"+">Reload Page </button>";
                 document.write(relod);
             }
-            function deleteTable() {
-                var dr=0;
-                if(confirm("It will be deleted..!!")) {
-                    document.getElementById("myTable").deleteRow(dr);
-                }
-            }
-            function reloadPage(){
+              function reloadPage(){
                 location.reload();
             }
         </script>
