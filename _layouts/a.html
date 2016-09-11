@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+
     <title>{{ page.title }}</title>
     <style>
       a{
@@ -19,6 +19,12 @@
     {% include mathjax.html %}
   </head>
   <body>
-    
+    <ul class="w3-navbar w3-black">
+  <li><a href="/">Home</a></li>
+  <li><a href="/TeamInfo">Team Info</a></li>
+  <li><a href="/extras">Extras/Help</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+{{ content }}
   </body>
 </html>
